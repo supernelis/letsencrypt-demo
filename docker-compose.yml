@@ -5,8 +5,7 @@ services:
     container_name: webserver    
     volumes:
       - ./content/:/usr/share/nginx/html
+      - ./letsencrypt/:/etc/letsencrypt
     ports:
       - "80:80"
       - "443:443"
-
-  
