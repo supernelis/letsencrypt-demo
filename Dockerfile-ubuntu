@@ -1,0 +1,9 @@
+FROM ubuntu:17.04
+
+# Ensure nginx is installed
+RUN apt-get update; apt-get install nginx software-properties-common -y
+RUN add-apt-repository ppa:certbot/certbot; apt-get update; apt-get install python-certbot-nginx -y
+
+VOLUME /var/www/html
+
+CMD ["nginx", "-g", "daemon off;"]

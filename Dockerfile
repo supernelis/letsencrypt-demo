@@ -6,6 +6,6 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sou
 # Ensure certbot is installed
 RUN apt-get install certbot -t jessie-backports -y
 
-RUN certbot certonly --webroot -w /usr/share/nginx/html -d test1.test.boucke.be
+RUN certbot certonly --non-interactive --agree-tos --email nelis@co-learning.be --webroot -w /usr/share/nginx/html -d test1.test.boucke.be
 
 
