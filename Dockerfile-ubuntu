@@ -14,8 +14,8 @@ ADD nginx-conf/ssl-test1.test.boucke.be.conf /etc/nginx/snippets/ssl-test1.test.
 ADD nginx-conf/test1.nginx.site /etc/nginx/sites-available/test1.test.boucke.be
 RUN ln -s /etc/nginx/sites-available/test1.test.boucke.be /etc/nginx/sites-enabled/test1.test.boucke.be
 
-ADD nginx-conf/test1.nginx.site /etc/nginx/sites-available/test2.test.boucke.be
-RUN ln -s /etc/nginx/sites-available/test1.test.boucke.be /etc/nginx/sites-enabled/test2.test.boucke.be
+ADD nginx-conf/test2.nginx.site /etc/nginx/sites-available/test2.test.boucke.be
+RUN ln -s /etc/nginx/sites-available/test2.test.boucke.be /etc/nginx/sites-enabled/test2.test.boucke.be
 
 # RUN certbot --non-interactive --agree-tos --email nelis@archiwise.com --domains test1.test.boucke.be --nginx
 
