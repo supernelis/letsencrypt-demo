@@ -6,10 +6,17 @@ RUN add-apt-repository ppa:certbot/certbot; apt-get update; apt-get install pyth
 
 VOLUME /var/www/html
 
+# Add SSL param config: 
+ADD nginx-conf/ssl-params.conf /etc/nginx/ssl-params.conf
+
+ADD nginx-conf/ssl-test1.test.boucke.be.conf /etc/nginx/snippets/ssl-test1.test.boucke.be.conf
+
+
+
 ADD test1.nginx.site /etc/nginx/sites-available/test1.test.boucke.be
 RUN ln -s /etc/nginx/sites-available/test1.test.boucke.be /etc/nginx/sites-enabled/test1.test.boucke.be
 
-RUN certbot --non-interactive --agree-tos --email nelis@archiwise.com --domains test1.test.boucke.be --nginx
+# RUN certbot --non-interactive --agree-tos --email nelis@archiwise.com --domains test1.test.boucke.be --nginx
 
 # certbot --non-interactive --agree-tos --email nelis@archiwise.com --nginx
 
