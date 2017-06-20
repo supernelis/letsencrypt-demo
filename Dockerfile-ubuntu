@@ -5,6 +5,7 @@ RUN apt-get update; apt-get install nginx software-properties-common vim -y
 RUN add-apt-repository ppa:certbot/certbot; apt-get update; apt-get install python-certbot-nginx -y
 
 VOLUME /var/www/html
+VOLUME /etc/letsencrypt
 
 # Add SSL param config: 
 ADD nginx-conf/ssl-params.conf /etc/nginx/snippets/ssl-params.conf
