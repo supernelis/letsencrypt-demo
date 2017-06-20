@@ -14,7 +14,7 @@ server {
 	include snippets/ssl-test1.test.boucke.be.conf;
     include snippets/ssl-params.conf;
 
-	root /var/www/html;
+	root /var/www/html/test1.test.boucke.be;
 
 	# Add index.php to the list if you are using PHP
 	index index.html
