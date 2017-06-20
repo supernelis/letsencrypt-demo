@@ -7,6 +7,7 @@ services:
     container_name: webserver    
     volumes:
       - ./content/:/var/www/html/test1.test.boucke.be
+      - ./content/:/var/www/html/test2.test.boucke.be
       - ./letsencrypt/:/etc/letsencrypts
     ports:
       - "80:80"

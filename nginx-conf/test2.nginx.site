@@ -2,17 +2,12 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	# SSL configuration
-	#
-	listen 443 ssl;
-	listen [::]:443 ssl;
-
 	root /var/www/html;
 
 	# Add index.php to the list if you are using PHP
 	index index.html
 
-	server_name test1.test.boucke.be;
+	server_name test2.test.boucke.be;
 
 	location / {
 		# First attempt to serve request as file, then
