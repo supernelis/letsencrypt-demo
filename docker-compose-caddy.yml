@@ -1,0 +1,12 @@
+version: '3'
+services:
+  webserver:
+    image: abiosoft/caddy
+    container_name: caddy    
+    volumes:
+      - ./caddy/CaddyFile:/etc/Caddyfile
+      - ./caddy/certs/:/root/.caddy
+      - ./content/:/srv/test5.test.boucke.be
+     ports:
+      - "80:80"
+      - "443:443"
