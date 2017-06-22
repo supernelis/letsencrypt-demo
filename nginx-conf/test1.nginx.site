@@ -17,7 +17,7 @@ server {
 	root /var/www/html/test1.test.boucke.be;
 
 	# Add index.php to the list if you are using PHP
-	index index.html
+	index index.html;
 
 	server_name test1.test.boucke.be;
 
