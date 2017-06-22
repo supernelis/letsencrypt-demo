@@ -8,6 +8,7 @@ services:
     volumes:
       - ./content/:/var/www/html/test1.test.boucke.be
       - ./content/:/var/www/html/test2.test.boucke.be
+      - ./content/:/var/www/html/test3.test.boucke.be
       - ./letsencrypt/:/etc/letsencrypt
     ports:
       - "80:80"
