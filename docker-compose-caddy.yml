@@ -7,6 +7,6 @@ services:
       - ./caddy/CaddyFile:/etc/Caddyfile
       - ./caddy/certs/:/root/.caddy
       - ./content/:/srv/test5.test.boucke.be
-     ports:
+    ports:
       - "80:80"
       - "443:443"
