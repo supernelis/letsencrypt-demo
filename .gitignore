@@ -1,2 +1,7 @@
 letsencrypt/accounts
 letsencrypt/renewal
+letsencrypt/archive
+letsencrypt/csr
+letsencrypt/keys
+letsencrypt/live
+letsencrypt/options-ssl-nginx.conf
