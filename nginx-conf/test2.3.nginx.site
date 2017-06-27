@@ -10,7 +10,8 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
 
-    include snippets/ssl-test2.test.boucke.be.conf;
+    ssl_certificate /etc/letsencrypt/live/test2.test.boucke.be/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/test2.test.boucke.be/privkey.pem;
     include snippets/ssl-params.conf;
 
     root /var/www/html/test2.test.boucke.be;
