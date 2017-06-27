@@ -3,7 +3,7 @@ services:
   webserver:
     build: 
       context: .
-      dockerfile: Dockerfile-ubuntu
+      dockerfile: Dockerfile
     container_name: webserver    
     volumes:
       - ./content/:/var/www/html/test1.test.boucke.be
