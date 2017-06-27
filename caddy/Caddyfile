@@ -1,0 +1,5 @@
+test5.test.boucke.be {
+	gzip
+	log ../access.log
+	root /srv/test5.test.boucke.be
+}
