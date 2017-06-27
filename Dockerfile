@@ -7,6 +7,8 @@ RUN add-apt-repository ppa:certbot/certbot; apt-get update; apt-get install pyth
 VOLUME /var/www/html
 VOLUME /etc/letsencrypt
 
+ADD nginx-conf/default.site /etc/nginx/sites-enabled/default
+
 # Add SSL param config: 
 ADD nginx-conf/ssl-params.conf /etc/nginx/snippets/ssl-params.conf
 
