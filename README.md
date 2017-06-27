@@ -14,7 +14,7 @@ Verify that the website config is there:
 	cat /etc/nginx/sites-enabled/test1.test.boucke.be
 </code>
 
-Optional: add a location to serve .well-known in the config and reload
+Optional: add a location to serve .well-known in the config and reload (not needed in nginx)
 
 <pre>
 	location ~ /.well-known {
@@ -32,7 +32,7 @@ Ask for a new certificate:
 	certbot certonly --non-interactive --agree-tos --email nelis@archiwise.com --domains test1.test.boucke.be --webroot --webroot-path /var/www/html/test1.test.boucke.be/
 </code>
 
-Update the config with the https settings [example](nginxconf/test1.2.nginx.site)
+Update the config with the https settings [example](nginx-conf/test1.2.nginx.site)
 
 <code>
 	service nginx reload
