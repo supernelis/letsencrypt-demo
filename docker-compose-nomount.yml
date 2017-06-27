@@ -1,0 +1,14 @@
+version: '3'
+services:
+  webserver:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: webserver    
+    volumes:
+      - ./content/:/var/www/html/test1.test.boucke.be
+      - ./content/:/var/www/html/test2.test.boucke.be
+      - ./content/:/var/www/html/test3.test.boucke.be
+    ports:
+      - "80:80"
+      - "443:443"
