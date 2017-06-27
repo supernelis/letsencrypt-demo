@@ -2,6 +2,7 @@
 Demo of setting up lets encrypt for nginx
 
 If you want to work from scratch
+
 <code>
 	docker-compose -f docker-compose-nomount.yml up -d
 	docker exec -u 0 -it webserver /bin/bash	
@@ -15,11 +16,13 @@ Verify that the website config is there:
 
 Optional: add a location to serve .well-known in the config and reload
 
-<code>
+<pre>
 	location ~ /.well-known {
                 allow all;
 	}
-	
+</pre>
+
+<code>
 	service nginx reload
 </code>
 
