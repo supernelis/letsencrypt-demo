@@ -1,6 +1,9 @@
 # letsencrypt-demo
 Demo of setting up lets encrypt for nginx
 
+
+## Let's encrypt with nginx
+
 If you want to work from scratch
 
 <code>
@@ -37,4 +40,9 @@ Update the config with the https settings [example](nginx-conf/test1.2.nginx.sit
 <code>
 	service nginx reload
 </code>		
+
+## Let's encrypt with Caddy
+
+docker-compose -f docker-compose-caddy.yml up -d
+
 
